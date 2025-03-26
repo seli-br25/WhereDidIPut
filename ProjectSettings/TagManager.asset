@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Trashbin
+  - Trash
+  - Clothes
+  - WashinMachine
   layers:
   - Default
   - TransparentFX
