@@ -9,6 +9,7 @@ public class ClothesMechanic : MonoBehaviour
     public bool allClothesIn = false;
     public GameObject lid;
     private Vector3 lidClosedPosition;
+    public GameObject clotheTaskTick;
 
     private void Start()
     {
@@ -49,7 +50,7 @@ public class ClothesMechanic : MonoBehaviour
             if (lid.transform.position == lidClosedPosition)
             {
                 Debug.Log("TASK DONE");
-                // TODO: Cross out the task on the list
+                clotheTaskTick.SetActive(true);
             } else
             {
                 Debug.Log("The lid is not closed! Please close it");

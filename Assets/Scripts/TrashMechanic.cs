@@ -7,6 +7,7 @@ public class TrashMechanic : MonoBehaviour
     private int trashCount = 0;
     private int numberOfTrash = 0;
     public bool taskDone = false;
+    public GameObject trashTaskTick;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -18,7 +19,7 @@ public class TrashMechanic : MonoBehaviour
             {
                 taskDone = true;
                 Debug.Log("TASK COMPLETE!");
-                // TODO: Cross out the task on the list
+                trashTaskTick.SetActive(true);
             }
         }
     }
