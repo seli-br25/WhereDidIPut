@@ -5,6 +5,7 @@ using UnityEngine;
 public class TrashMechanic : MonoBehaviour
 {
     private int trashCount = 0;
+    private int numberOfTrash = 0;
     public bool taskDone = false;
 
     private void OnTriggerEnter(Collider other)
@@ -13,10 +14,11 @@ public class TrashMechanic : MonoBehaviour
         {
             trashCount++;
             Debug.Log("Trash entered: " + trashCount);
-            if (trashCount >= 4)
+            if (trashCount >= numberOfTrash)
             {
                 taskDone = true;
-                Debug.Log("Task complete!");
+                Debug.Log("TASK COMPLETE!");
+                // TODO: Cross out the task on the list
             }
         }
     }
@@ -27,7 +29,7 @@ public class TrashMechanic : MonoBehaviour
         {
             trashCount--;
             Debug.Log("Trash exited: " + trashCount);
-            if (trashCount < 4)
+            if (trashCount < numberOfTrash)
             {
                 taskDone = false;
             }
