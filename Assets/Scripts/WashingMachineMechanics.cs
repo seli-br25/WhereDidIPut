@@ -5,15 +5,19 @@ using UnityEngine;
 public class WashingMachineMechanic : MonoBehaviour
 {
     private int clotheCount = 0;
-    private int totalClothes = 1;
+    private int totalClothes = 4;
     public bool allClothesIn = false;
     public GameObject lid;
     private Vector3 lidClosedPosition;
     public GameObject clotheTaskTick;
+    public GameObject offLight;
+    public GameObject onLight;
 
     private void Start()
     {
         lidClosedPosition = lid.transform.position;
+        offLight.SetActive(true);
+        onLight.SetActive(false);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -32,10 +36,10 @@ public class WashingMachineMechanic : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Trash"))
+        if (other.CompareTag("Clothes"))
         {
             clotheCount--;
-            Debug.Log("Trash exited: " + clotheCount);
+            Debug.Log("Clothe exited: " + clotheCount);
             if (clotheCount < totalClothes)
             {
                 allClothesIn = false;
@@ -47,9 +51,12 @@ public class WashingMachineMechanic : MonoBehaviour
     {
         if (allClothesIn)
         {
-            if (lid.transform.position == lidClosedPosition)
+            float distance = Vector3.Distance(lidClosedPosition, lid.transform.position);
+            if (distance < 0.01f) 
             {
                 Debug.Log("TASK DONE");
+                offLight.SetActive(false);
+                onLight.SetActive(true);
                 clotheTaskTick.SetActive(true);
             } else
             {
