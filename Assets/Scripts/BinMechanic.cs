@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+
 
 public class BinMechanic : MonoBehaviour
 {
@@ -10,6 +12,12 @@ public class BinMechanic : MonoBehaviour
     public GameObject trashTaskTick;
     public AudioSource trash;
     public AudioSource success;
+    public TMP_Text trashText;
+
+    private void Start()
+    {
+        trashText.text = "Trash colltected: " + trashCount + "/" + numberOfTrash;
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -17,10 +25,13 @@ public class BinMechanic : MonoBehaviour
         {
             trashCount++;
             Debug.Log("Trash entered: " + trashCount);
+            trashText.text = "Trash colltected: " + trashCount + "/" + numberOfTrash;
+
             trash.Play();
             if (trashCount >= numberOfTrash)
             {
                 taskDone = true;
+                trashText.text = "Cleanup complete!";
                 Debug.Log("TASK COMPLETE!");
                 success.Play();
                 trashTaskTick.SetActive(true);

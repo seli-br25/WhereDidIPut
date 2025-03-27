@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class WashingMachineMechanic : MonoBehaviour
 {
@@ -14,12 +15,14 @@ public class WashingMachineMechanic : MonoBehaviour
     public GameObject onLight;
     public AudioSource washingMachine;
     public AudioSource success;
+     public TMP_Text sockText;
 
     private void Start()
     {
         lidClosedPosition = lid.transform.position;
         offLight.SetActive(true);
         onLight.SetActive(false);
+        sockText.text = "Dirty socks colltected: " + clotheCount + "/" + totalClothes;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -28,10 +31,12 @@ public class WashingMachineMechanic : MonoBehaviour
         {
             clotheCount++;
             Debug.Log("Clothe entered: " + clotheCount);
+            sockText.text = "Dirty socks colltected: " + clotheCount + "/" + totalClothes;
             if (clotheCount >= totalClothes)
             {
                 allClothesIn = true;
                 Debug.Log("All dirty clothes are in!");
+                sockText.text = "All dirty clothes are in!";
             }
         }
     }
@@ -57,6 +62,7 @@ public class WashingMachineMechanic : MonoBehaviour
             if (distance < 0.01f) 
             {
                 Debug.Log("TASK DONE");
+                sockText.text = "Washing successfully started!";
                 offLight.SetActive(false);
                 onLight.SetActive(true);
                 clotheTaskTick.SetActive(true);
@@ -65,6 +71,7 @@ public class WashingMachineMechanic : MonoBehaviour
             } else
             {
                 Debug.Log("The lid is not closed! Please close it");
+                sockText.text = "The lid is not closed! Please close it";
             }
         } else
         {
