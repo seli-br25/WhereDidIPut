@@ -5,7 +5,7 @@ using UnityEngine;
 public class WashingMachineMechanic : MonoBehaviour
 {
     private int clotheCount = 0;
-    private int totalClothes = 5;
+    private int totalClothes = 1;
     public bool allClothesIn = false;
     public GameObject lid;
     private Vector3 lidClosedPosition;

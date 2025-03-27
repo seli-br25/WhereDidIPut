@@ -796,7 +796,7 @@ GameObject:
   - component: {fileID: 88844309}
   - component: {fileID: 88844308}
   - component: {fileID: 88844307}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Clothe2
   m_TagString: Clothes
   m_Icon: {fileID: 0}
@@ -961,7 +961,7 @@ GameObject:
   - component: {fileID: 94223104}
   - component: {fileID: 94223103}
   - component: {fileID: 94223102}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: '[BuildingBlock] HandGrab'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2115,7 +2115,7 @@ GameObject:
   - component: {fileID: 217672850}
   - component: {fileID: 217672849}
   - component: {fileID: 217672848}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: '[BuildingBlock] HandGrab'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2362,7 +2362,7 @@ GameObject:
   - component: {fileID: 219213683}
   - component: {fileID: 219213682}
   - component: {fileID: 219213684}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Machine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3105,7 +3105,7 @@ GameObject:
   - component: {fileID: 298203570}
   - component: {fileID: 298203569}
   - component: {fileID: 298203568}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Clothe
   m_TagString: Clothes
   m_Icon: {fileID: 0}
@@ -3469,7 +3469,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 368109491}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Washing Machine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4153,6 +4153,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Family Picture
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f140c042f19d44b0b9c9ceddf31f1c91, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4263,19 +4267,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 27017709181320497, guid: d2d6934a666a18d46b8b7a3864dc9f63, type: 3}
       propertyPath: m_Layer
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3273305738074604401, guid: d2d6934a666a18d46b8b7a3864dc9f63, type: 3}
       propertyPath: m_Layer
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3728557434777282978, guid: d2d6934a666a18d46b8b7a3864dc9f63, type: 3}
       propertyPath: m_Layer
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7516989853945399145, guid: d2d6934a666a18d46b8b7a3864dc9f63, type: 3}
       propertyPath: m_Layer
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7516989854015812293, guid: d2d6934a666a18d46b8b7a3864dc9f63, type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.size
@@ -4307,11 +4311,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7516989854015812296, guid: d2d6934a666a18d46b8b7a3864dc9f63, type: 3}
       propertyPath: m_Layer
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7516989854277117943, guid: d2d6934a666a18d46b8b7a3864dc9f63, type: 3}
       propertyPath: m_Layer
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7516989854395125638, guid: d2d6934a666a18d46b8b7a3864dc9f63, type: 3}
       propertyPath: m_RootOrder
@@ -4379,7 +4383,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7516989854395125640, guid: d2d6934a666a18d46b8b7a3864dc9f63, type: 3}
       propertyPath: m_Layer
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7516989854395125640, guid: d2d6934a666a18d46b8b7a3864dc9f63, type: 3}
       propertyPath: m_IsActive
@@ -4387,7 +4391,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7516989854494854116, guid: d2d6934a666a18d46b8b7a3864dc9f63, type: 3}
       propertyPath: m_Layer
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7516989854707263118, guid: d2d6934a666a18d46b8b7a3864dc9f63, type: 3}
       propertyPath: m_LocalScale.x
@@ -4403,15 +4407,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7516989854707263119, guid: d2d6934a666a18d46b8b7a3864dc9f63, type: 3}
       propertyPath: m_Layer
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7516989854733870114, guid: d2d6934a666a18d46b8b7a3864dc9f63, type: 3}
       propertyPath: m_Layer
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7516989854852174099, guid: d2d6934a666a18d46b8b7a3864dc9f63, type: 3}
       propertyPath: m_Layer
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7516989854951799702, guid: d2d6934a666a18d46b8b7a3864dc9f63, type: 3}
       propertyPath: _selectedColor.b
@@ -4427,7 +4431,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7516989854951799704, guid: d2d6934a666a18d46b8b7a3864dc9f63, type: 3}
       propertyPath: m_Layer
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4474,7 +4478,7 @@ GameObject:
   - component: {fileID: 652687612}
   - component: {fileID: 652687611}
   - component: {fileID: 652687610}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: '[BuildingBlock] HandGrab'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4931,7 +4935,7 @@ GameObject:
   - component: {fileID: 707425946}
   - component: {fileID: 707425945}
   - component: {fileID: 707425944}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: '[BuildingBlock] HandGrab'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5467,7 +5471,7 @@ GameObject:
   - component: {fileID: 856144990}
   - component: {fileID: 856144989}
   - component: {fileID: 856144992}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: '[BuildingBlock] HandGrab'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5628,7 +5632,7 @@ GameObject:
   - component: {fileID: 997351366}
   - component: {fileID: 997351365}
   - component: {fileID: 997351364}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Milk-1
   m_TagString: Trash
   m_Icon: {fileID: 0}
@@ -5785,7 +5789,7 @@ GameObject:
   - component: {fileID: 1031794742}
   - component: {fileID: 1031794741}
   - component: {fileID: 1031794740}
-  m_Layer: 4
+  m_Layer: 3
   m_Name: Lid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6123,7 +6127,7 @@ GameObject:
   - component: {fileID: 1033683727}
   - component: {fileID: 1033683726}
   - component: {fileID: 1033683725}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: '[BuildingBlock] HandGrab'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6695,7 +6699,7 @@ GameObject:
   - component: {fileID: 1182638949}
   - component: {fileID: 1182638948}
   - component: {fileID: 1182638947}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Milk
   m_TagString: Trash
   m_Icon: {fileID: 0}
@@ -6858,7 +6862,7 @@ GameObject:
   - component: {fileID: 1189297754}
   - component: {fileID: 1189297756}
   - component: {fileID: 1189297755}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Inner lid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6940,7 +6944,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1202432949}
   - component: {fileID: 1202432950}
-  m_Layer: 4
+  m_Layer: 3
   m_Name: GrabInteractable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6994,7 +6998,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1328318582}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MachineBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7203,7 +7207,7 @@ GameObject:
   - component: {fileID: 1347159607}
   - component: {fileID: 1347159606}
   - component: {fileID: 1347159605}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Trash (3)
   m_TagString: Trash
   m_Icon: {fileID: 0}
@@ -7355,7 +7359,7 @@ GameObject:
   - component: {fileID: 1359577153}
   - component: {fileID: 1359577152}
   - component: {fileID: 1359577151}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: '[BuildingBlock] HandGrab'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7496,7 +7500,7 @@ GameObject:
   - component: {fileID: 1378516073}
   - component: {fileID: 1378516072}
   - component: {fileID: 1378516071}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: '[BuildingBlock] HandGrab'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7634,7 +7638,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1433667973}
   - component: {fileID: 1433667974}
-  m_Layer: 4
+  m_Layer: 3
   m_Name: HandGrabInteractable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7932,7 +7936,7 @@ Transform:
   m_GameObject: {fileID: 1480944431}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.61270016, z: 0, w: 0.7903155}
-  m_LocalPosition: {x: 0.152, y: 1.823, z: 3.338}
+  m_LocalPosition: {x: 0.152, y: 1.4, z: 3.338}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7977,7 +7981,7 @@ GameObject:
   - component: {fileID: 1523845409}
   - component: {fileID: 1523845408}
   - component: {fileID: 1523845407}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Trash (1)
   m_TagString: Trash
   m_Icon: {fileID: 0}
@@ -8162,7 +8166,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1647382576}
   - component: {fileID: 1647382577}
-  m_Layer: 4
+  m_Layer: 3
   m_Name: Hinge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8227,7 +8231,7 @@ GameObject:
   - component: {fileID: 1671492327}
   - component: {fileID: 1671492326}
   - component: {fileID: 1671492324}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Familiy Picture
   m_TagString: Trash
   m_Icon: {fileID: 0}
@@ -8393,7 +8397,7 @@ GameObject:
   - component: {fileID: 1677390115}
   - component: {fileID: 1677390114}
   - component: {fileID: 1677390113}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: '[BuildingBlock] HandGrab'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8535,7 +8539,7 @@ GameObject:
   - component: {fileID: 1692098742}
   - component: {fileID: 1692098741}
   - component: {fileID: 1692098740}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Clothe2-1
   m_TagString: Clothes
   m_Icon: {fileID: 0}
@@ -8688,7 +8692,7 @@ GameObject:
   - component: {fileID: 1708128149}
   - component: {fileID: 1708128148}
   - component: {fileID: 1708128147}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Clothe-1
   m_TagString: Clothes
   m_Icon: {fileID: 0}
@@ -8840,7 +8844,7 @@ GameObject:
   - component: {fileID: 1822007059}
   - component: {fileID: 1822007058}
   - component: {fileID: 1822007057}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: '[BuildingBlock] HandGrab'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8982,7 +8986,7 @@ GameObject:
   - component: {fileID: 1842038682}
   - component: {fileID: 1842038681}
   - component: {fileID: 1842038680}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Clothe1
   m_TagString: Clothes
   m_Icon: {fileID: 0}
@@ -9134,7 +9138,7 @@ GameObject:
   - component: {fileID: 1888324313}
   - component: {fileID: 1888324312}
   - component: {fileID: 1888324311}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: '[BuildingBlock] HandGrab'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9273,7 +9277,7 @@ GameObject:
   - component: {fileID: 1906518022}
   - component: {fileID: 1906518024}
   - component: {fileID: 1906518023}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Outer lid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9358,7 +9362,7 @@ GameObject:
   - component: {fileID: 2019418586}
   - component: {fileID: 2019418583}
   - component: {fileID: 2019418585}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Machine.001
   m_TagString: WashinMachine
   m_Icon: {fileID: 0}
@@ -9812,7 +9816,7 @@ GameObject:
   - component: {fileID: 2114269649}
   - component: {fileID: 2114269648}
   - component: {fileID: 2114269647}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Trash (2)
   m_TagString: Trash
   m_Icon: {fileID: 0}
