@@ -5,7 +5,7 @@ using UnityEngine;
 public class BinMechanic : MonoBehaviour
 {
     private int trashCount = 0;
-    private int numberOfTrash = 5;
+    private int numberOfTrash = 1;
     public bool taskDone = false;
     public GameObject trashTaskTick;
 
