@@ -8,12 +8,8 @@ public class BinMechanic : MonoBehaviour
     private int numberOfTrash = 4;
     public bool taskDone = false;
     public GameObject trashTaskTick;
-    private AudioSource audioSource;
-
-    private void Start()
-    {
-        audioSource = GetComponent<AudioSource>();
-    }
+    public AudioSource trash;
+    public AudioSource success;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -21,11 +17,12 @@ public class BinMechanic : MonoBehaviour
         {
             trashCount++;
             Debug.Log("Trash entered: " + trashCount);
-            audioSource.Play();
+            trash.Play();
             if (trashCount >= numberOfTrash)
             {
                 taskDone = true;
                 Debug.Log("TASK COMPLETE!");
+                success.Play();
                 trashTaskTick.SetActive(true);
             }
         }
