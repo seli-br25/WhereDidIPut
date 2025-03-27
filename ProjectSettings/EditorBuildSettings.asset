@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SelisPlayroom.unity
-    guid: 730e9d9f1e120403a9d1e38055f6f7ee
+    path: Assets/Scenes/GameScene.unity
+    guid: 370af3569e8a945c4890051f2b9d966f
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 03bb324aae8f94f87b968ec715a80193, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: f99593b8639e04b1d82791214532e0a9, type: 2}
