@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ClothesMechanic : MonoBehaviour
+public class WashingMachineMechanic : MonoBehaviour
 {
     private int clotheCount = 0;
-    private int totalClothes = 3;
+    private int totalClothes = 5;
     public bool allClothesIn = false;
     public GameObject lid;
     private Vector3 lidClosedPosition;

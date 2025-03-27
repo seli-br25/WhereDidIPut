@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TrashMechanic : MonoBehaviour
+public class BinMechanic : MonoBehaviour
 {
     private int trashCount = 0;
-    private int numberOfTrash = 0;
+    private int numberOfTrash = 5;
     public bool taskDone = false;
     public GameObject trashTaskTick;
 
