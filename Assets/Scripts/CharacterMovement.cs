@@ -7,7 +7,7 @@ public class CharacterMovement : MonoBehaviour
 
     public CharacterController controller;
     public Transform camTransform;
-    public float rotationSpeed = 80f;
+    public float rotationSpeed = 50f;
     public float moveSpeed = 1f;
     bool turnCameraLeft;
     bool turnCameraRight;
@@ -33,7 +33,7 @@ public class CharacterMovement : MonoBehaviour
         if (moveFoward)
         {
             //Vector3 moveDirection = camTransform.forward * moveSpeed * Time.deltaTime;
-            Vector3 moveDirection = new Vector3(camTransform.forward.x * moveSpeed * Time.deltaTime, 0f , camTransform.forward.z * moveSpeed * Time.deltaTime);
+            Vector3 moveDirection = new Vector3(camTransform.forward.x * moveSpeed * Time.deltaTime, 0f, camTransform.forward.z * moveSpeed * Time.deltaTime);
             controller.Move(moveDirection);
 
         }
