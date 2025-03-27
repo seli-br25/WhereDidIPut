@@ -12,14 +12,14 @@ public class WashingMachineMechanic : MonoBehaviour
     public GameObject clotheTaskTick;
     public GameObject offLight;
     public GameObject onLight;
-    private AudioSource audioSource;
+    public AudioSource washingMachine;
+    public AudioSource success;
 
     private void Start()
     {
         lidClosedPosition = lid.transform.position;
         offLight.SetActive(true);
         onLight.SetActive(false);
-        audioSource = GetComponent<AudioSource>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -60,7 +60,8 @@ public class WashingMachineMechanic : MonoBehaviour
                 offLight.SetActive(false);
                 onLight.SetActive(true);
                 clotheTaskTick.SetActive(true);
-                audioSource.Play();
+                washingMachine.Play();
+                success.Play();
             } else
             {
                 Debug.Log("The lid is not closed! Please close it");
