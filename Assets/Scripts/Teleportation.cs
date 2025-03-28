@@ -53,6 +53,6 @@ public class Teleportation : MonoBehaviour
 
     private void TeleportTo(float x, float y, float z)
     {
-        player.transform.position = new Vector3(x, y, z);
+        player.position = new Vector3(x, y, z);
     }
 }
