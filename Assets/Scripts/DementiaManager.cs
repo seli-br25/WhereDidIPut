@@ -6,7 +6,7 @@ public class DementiaManager : MonoBehaviour
 {
     public Slider dementiaSlider; // Reference to the UI bar
     public float dementiaValue = 0f; // Ranges from 0 to 100
-    public float timeToMax = 120f; // Time in seconds to reach 100 (3 minutes)
+    public float timeToMax = 180f; // Time in seconds to reach 100 (3 minutes)
     public float holdingBoost = -10f; // How much holding the picture reduces the bar (negative = decrease)
     public HandGrabInteractable grabInteractable;
     public Transform playerCamera;
