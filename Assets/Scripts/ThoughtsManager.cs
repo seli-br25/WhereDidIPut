@@ -5,21 +5,26 @@ using Oculus.Interaction.HandGrab;
 
 public class ThoughtsManager : MonoBehaviour
 {
-    private AudioSource startAudioSource;
+    public AudioSource startAudioSource;
+    public AudioSource endAudioSource;
     private AudioSource trashAudioSource;
     public HandGrabInteractable grabInteractable;
 
+    public GameObject task1;
+    public GameObject task2;
+    public GameObject task3;
+
     private bool grabAudioPlayed = false;
+    private bool endAudioPlayed = false;
 
     // Start is called before the first frame update
     void Start()
     {
         if (this.gameObject.name.Equals("Player"))
         {
-            startAudioSource = GetComponent<AudioSource>();
             if (startAudioSource != null)
             {
-                Invoke("PlayDelayedAudio", 5f);
+                Invoke("PlayDelayedAudio", 3f);
             }
         }
         else if (gameObject.name.Equals("TrashRespawned"))
@@ -35,6 +40,12 @@ public class ThoughtsManager : MonoBehaviour
         {
             trashAudioSource?.Play();
             grabAudioPlayed = true;
+        }
+
+        if (!endAudioPlayed && task1.activeSelf && task2.activeSelf && task3.activeSelf && this.gameObject.name.Equals("Player"))
+        {
+            endAudioSource.Play();
+            endAudioPlayed = true;
         }
     }
 
