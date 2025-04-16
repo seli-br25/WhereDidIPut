@@ -7,7 +7,7 @@ public class ThoughtsManager : MonoBehaviour
 {
     public AudioSource startAudioSource;
     public AudioSource endAudioSource;
-    private AudioSource trashAudioSource;
+    public AudioSource trashAudioSource;
     public HandGrabInteractable grabInteractable;
 
     public GameObject task1;
@@ -27,10 +27,6 @@ public class ThoughtsManager : MonoBehaviour
                 Invoke("PlayDelayedAudio", 3f);
             }
         }
-        else if (gameObject.name.Equals("TrashRespawned"))
-        {
-            trashAudioSource = GetComponent<AudioSource>();
-        }
     }
 
     // Update is called once per frame
@@ -38,7 +34,7 @@ public class ThoughtsManager : MonoBehaviour
     {
         if (!grabAudioPlayed && grabInteractable != null && grabInteractable.Interactors.Count > 0 && this.gameObject.name.Equals("TrashRespawned"))
         {
-            trashAudioSource?.Play();
+            trashAudioSource.Play();
             grabAudioPlayed = true;
         }
 
