@@ -9,3 +9,5 @@ Developed as part of a 3-day project sprint in the Erasmsu+ Blended Intensive Pr
 - **João Macieira (IPCA)** – Product Manager
 - **David Carvalho (IPCA)** – Game Designer
 - **Ella Ribeiro (IPCA)** – Lead Artist
+
+A Demo-Video and APK-Build can be found here: https://drive.google.com/drive/folders/1JolkPYsjKFYU4ORZzFI1y91XZPahWArx?usp=drive_link
