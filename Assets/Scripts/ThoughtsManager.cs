@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Oculus.Interaction.HandGrab;
+using UnityEngine.Video;
 
 public class ThoughtsManager : MonoBehaviour
 {
@@ -16,6 +17,8 @@ public class ThoughtsManager : MonoBehaviour
 
     private bool grabAudioPlayed = false;
     private bool endAudioPlayed = false;
+
+    public VideoPlayer endVideo;
 
     // Start is called before the first frame update
     void Start()
@@ -48,5 +51,13 @@ public class ThoughtsManager : MonoBehaviour
     void PlayDelayedAudio()
     {
         startAudioSource.Play();
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Finish") && endAudioPlayed)
+        {
+            endVideo.Play();
+        }
     }
 }

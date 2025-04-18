@@ -22,63 +22,79 @@ public class DementiaManager : MonoBehaviour
 
     public RawImage blurOverlay;
 
+    public GameObject task1;
+    public GameObject task2;
+    public GameObject task3;
+
     void Update()
     {
-        bool isHoldingPicture = IsPictureInHand();
-
-        float delta = (100f / timeToMax) * Time.deltaTime;
-
-        if (isHoldingPicture)
-            dementiaValue += delta * (holdingBoost / (100f / timeToMax)); // reduce bar while holding picture
-        else
-            dementiaValue += delta;
-
-        dementiaValue = Mathf.Clamp(dementiaValue, 0f, 100f);
-
-        if (dementiaSlider != null)
-            dementiaSlider.value = dementiaValue;
-
-
-        if (dementiaValue > 90f)
+        if (task1.activeSelf && task2.activeSelf && task3.activeSelf)
         {
-            timeOver90 += Time.deltaTime;
-            if (!over90AudioPlayed)
-            {
-                over90AudioSource.Play();
-                over90AudioPlayed = true;
-            }
+            // game end
+            dementiaSlider.value = 0.0f;
+            Color color = blurOverlay.color;
+            color.a = 0.0f;
+            blurOverlay.color = color;
+        } else
+        {
+            bool isHoldingPicture = IsPictureInHand();
 
-            if (timeOver90 >= 40f && over90AudioPlayed)
+            float delta = (100f / timeToMax) * Time.deltaTime;
+
+            if (isHoldingPicture)
+                dementiaValue += delta * (holdingBoost / (100f / timeToMax)); // reduce bar while holding picture
+            else
+                dementiaValue += delta;
+
+            dementiaValue = Mathf.Clamp(dementiaValue, 0f, 100f);
+
+            if (dementiaSlider != null)
+                dementiaSlider.value = dementiaValue;
+
+
+            if (dementiaValue > 90f)
             {
-                over90AudioPlayed = false;
+                timeOver90 += Time.deltaTime;
+                if (!over90AudioPlayed)
+                {
+                    over90AudioSource.Play();
+                    over90AudioPlayed = true;
+                }
+
+                if (timeOver90 >= 40f && over90AudioPlayed)
+                {
+                    over90AudioPlayed = false;
+                    timeOver90 = 0f;
+                }
+                // TODO: teleportation
+            }
+            else
+            {
                 timeOver90 = 0f;
+                over90AudioPlayed = false;
             }
-            // TODO: teleportation
-        } else
-        {
-            timeOver90 = 0f;
-            over90AudioPlayed = false; 
-        }
 
-        if (dementiaValue > 70f)
-        {
-            if (!over70AudioPlayed)
+            if (dementiaValue > 70f)
             {
-                over70AudioSource.Play();
-                over70AudioPlayed = true;
-            }
-            
-            // TODO: teleportation
-        } else
-        {
-            over70AudioPlayed = false;
-        }
+                if (!over70AudioPlayed)
+                {
+                    over70AudioSource.Play();
+                    over70AudioPlayed = true;
+                }
 
-        if (dementiaValue > 40f)
-        {
-            // TODO: teleportation
+                // TODO: teleportation
+            }
+            else
+            {
+                over70AudioPlayed = false;
+            }
+
+            if (dementiaValue > 40f)
+            {
+                // TODO: teleportation
+            }
+            UpdateBlurAlpha();
         }
-        UpdateBlurAlpha();
     }
 
     bool IsPictureInHand()
